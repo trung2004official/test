@@ -43,7 +43,7 @@ Content-Type: application/json
 
 ###
 
-@id=1
+@id=2
 DELETE {{ApiProjectLearning_HostAddress}}/todoitems/{{id}}
 
 ###
