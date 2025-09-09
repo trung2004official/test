@@ -1,0 +1,49 @@
+﻿@ApiProjectLearning_HostAddress = https://localhost:7172
+
+POST {{ApiProjectLearning_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name":"walk dog",
+  "isComplete":true
+}
+
+###
+
+GET {{ApiProjectLearning_HostAddress}}/todoitems
+
+###
+
+GET {{ApiProjectLearning_HostAddress}}/todoitems
+
+###
+
+POST {{ApiProjectLearning_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name":"walk cat",
+  "isComplete":false
+}
+
+###
+
+GET {{ApiProjectLearning_HostAddress}}/todoitems/complete
+
+###
+
+@id=1
+PUT {{ApiProjectLearning_HostAddress}}/todoitems/{{id}}
+Content-Type: application/json
+
+{
+  "name": "feed fish",
+  "isComplete": true
+}
+
+###
+
+@id=1
+DELETE {{ApiProjectLearning_HostAddress}}/todoitems/{{id}}
+
+###
